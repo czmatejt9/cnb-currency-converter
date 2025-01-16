@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ewgCFUlAGiA=",
+  "dgSpecHash": "z8mwjelH5SQ=",
   "success": true,
-  "projectFilePath": "/home/czmatejt/RiderProjects/CurrencyConverter/CurrencyConverter/CurrencyConverter.csproj",
+  "projectFilePath": "/home/czmatejt/RiderProjects/cnb-currency-converter/CurrencyConverter/CurrencyConverter.csproj",
   "expectedPackageFiles": [
     "/home/czmatejt/.nuget/packages/csfastfloat/4.1.5/csfastfloat.4.1.5.nupkg.sha512",
     "/home/czmatejt/.nuget/packages/sep/0.6.0/sep.0.6.0.nupkg.sha512"

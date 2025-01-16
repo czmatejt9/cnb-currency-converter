@@ -87,11 +87,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/czmatejt/RiderProjects/CurrencyConverter/CurrencyConverter/CurrencyConverter.csproj",
+      "projectUniqueName": "/home/czmatejt/RiderProjects/cnb-currency-converter/CurrencyConverter/CurrencyConverter.csproj",
       "projectName": "CurrencyConverter",
-      "projectPath": "/home/czmatejt/RiderProjects/CurrencyConverter/CurrencyConverter/CurrencyConverter.csproj",
+      "projectPath": "/home/czmatejt/RiderProjects/cnb-currency-converter/CurrencyConverter/CurrencyConverter.csproj",
       "packagesPath": "/home/czmatejt/.nuget/packages/",
-      "outputPath": "/home/czmatejt/RiderProjects/CurrencyConverter/CurrencyConverter/obj/",
+      "outputPath": "/home/czmatejt/RiderProjects/cnb-currency-converter/CurrencyConverter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/czmatejt/.nuget/NuGet/NuGet.Config"
@@ -144,7 +144,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/czmatejt/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/czmatejt/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

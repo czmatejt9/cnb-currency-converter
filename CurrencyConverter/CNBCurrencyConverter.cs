@@ -46,7 +46,11 @@ public class CNBCurrencyConverter : ICurrencyConverter
     private void ParseCurrencyRates(string rates)
     {
         var dateString = rates[..10];
-        ValidityDate = DateTime.Parse(dateString);
+        ValidityDate = new DateTime(
+            day: int.Parse(dateString[..2]),
+            month: int.Parse(dateString[3..5]),
+            year: int.Parse(dateString[6..])
+        );
         ValidityDate = ValidityDate.Add(TimeSpan.FromHours(14.5));
         rates = rates[(rates.IndexOf('\n') + 1)..];
 
@@ -63,19 +67,19 @@ public class CNBCurrencyConverter : ICurrencyConverter
         Console.WriteLine(Rates);
     }
     
-    public decimal Convert(decimal amount, string fromCurrencyCode, string toCurrencyCode)
+    public decimal Convert(decimal amount, CurrencyCode fromCurrencyCode, CurrencyCode toCurrencyCode)
     {
         return amount * ConversionRate(fromCurrencyCode, toCurrencyCode);
     }
     
-    public decimal ConversionRate(string fromCurrencyCode, string toCurrencyCode)
+    public decimal ConversionRate(CurrencyCode fromCurrencyCode, CurrencyCode toCurrencyCode)
     {
         decimal fromValue;
         decimal toValue;
         try
         {
-            fromValue = Rates[Enum.Parse<CurrencyCode>(fromCurrencyCode)];
-            toValue = Rates[Enum.Parse<CurrencyCode>(toCurrencyCode)];
+            fromValue = Rates[fromCurrencyCode];
+            toValue = Rates[toCurrencyCode];
         }
         catch (Exception e)
         {
